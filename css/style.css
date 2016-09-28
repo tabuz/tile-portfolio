@@ -1,0 +1,308 @@
+body{
+	color: lightgray;
+	font-size: 28px;
+	background-color: #212121;
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+a {	
+	display: block;
+	text-decoration: none;
+	color: lightgray;
+	height: 150px;
+}
+.shadowed {
+	box-shadow: inset 0px 0px 51px 3px rgba(0,0,0,0.75);
+}
+
+.wrapper{
+	margin: 5px;
+	width: 100%;
+}
+.socials{
+	width: 100px;
+	height: 150px;
+	display: block;
+	text-decoration: none;
+}
+#container{
+	margin: 0 auto;
+	border: 0px solid red;
+	width: 1000px;
+}
+.rectangle{
+	margin: 0px;
+	border: 0px solid red;
+	width: 900px;
+}
+.rectangle2{
+	margin: 0px 0;
+	border: 0px solid red;
+	width: 920px;
+}
+.square{
+	margin: 5px 0px;
+	border: 0px solid red;
+	width: 450px;
+	float: left;
+	min-height: 300px;
+}
+.main{
+	width: 900px;
+	margin: 5px auto;
+	border: 0px solid red;
+}
+#logo {
+	line-height:108px;
+	font-size: 78px;
+	float:left;
+}
+#clock{
+	font-size: 78px;
+	text-align: right;
+	font-family: 'Nova Mono', monospace;
+}
+#bottom{
+    width: 900px;
+    font-size: 23px;
+    background-color: gray;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: inset 0px 0px 51px 3px rgba(0,0,0,0.75);
+    margin: 0 auto;
+}
+.tile1{
+	text-align: center;
+	margin: 10px;
+	width: 205px;
+	height: 150px;
+	background-color: #43A047;
+	float: left;
+}
+.tile1:hover a{
+	color: #EEEEEE;
+	background-color: #329036;
+}
+.tile2{
+	text-align: center;
+	margin: 10px;
+	width: 205px;
+	height: 150px;
+	background-color: #1E88E5;
+	float: left;
+}
+.tile2:hover a{
+	color: #EEEEEE;
+	background-color: #0D77C4;
+}
+.tile3{
+	padding-top: 25px;
+	text-align: center;
+	margin: 10px;
+	width: 430px;
+	height: 125px;
+	background-color: #EF6C00;
+	float: left;
+}
+.tile4{
+	overflow: hidden;
+	margin: 10px;
+	width: 430px;
+	height: 320px;
+	background-color: white;
+	animation-duration: 1s;
+	animation-play-state: running;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.fb{
+	margin: 10px 5px 5px 10px;
+	width: 100px;
+	height: 150px;
+	background-color: #3b5999;
+	float: left;
+}
+.fb:hover{
+	color: #EEEEEE;
+	background-color: #2a4888;
+}
+.yt{
+	margin: 10px 5px 5px 5px;
+	width: 100px;
+	height: 150px;
+	background-color: #cd201f;
+	float: left;
+}
+.yt:hover{
+	color: #EEEEEE;
+	background-color: #bc100e;
+}
+.gplus{
+	margin: 10px 5px 5px 5px;
+	width: 100px;
+	height: 150px;
+	background-color: #dd4b39;
+	float: left;
+}
+.gplus:hover{
+	color: #EEEEEE;
+	background-color: #cc3a28;
+}
+.tw{
+	margin: 10px 5px 5px 5px;
+	width: 100px;
+	height: 150px;
+	background-color: #55acee;
+	float: left;
+}
+.tw:hover{
+	color: #EEEEEE;
+	background-color: #449bdd;
+}
+#leo {
+	animation-name: pulse;
+	animation-duration: 8s;
+	animation-play-state: running;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+#me {
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+	border-radius: 50%;
+	float: left;
+	margin: 10px;
+}
+#project1, #project2, #project3{
+	font-size: 24px;
+	text-align: center;
+	height: 300px;
+}
+#project2, #project3 {
+	display: none;
+}
+#right {
+	color: orange;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 34%;
+	right: 2%;
+}
+#left {
+	color: orange;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 34%;
+	left: 2%;
+}
+#contact, #aboutMe, #cv, #projects{
+	color: black;
+	padding: 30px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 800px;
+	height: 300px;
+	z-index: 0;
+	opacity: 0;
+	display: none;
+	animation-duration: 2s;
+	animation-play-state: running;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+#back {
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	position: fixed; 
+	top: 2%;
+	right: 2%;
+	cursor: pointer;
+}
+#contactForm input, #contactForm textarea{
+	font-family: sans-serif;
+	font-size: 24px;
+}
+#contactForm span{
+	width: 120px;
+	height: 30px;
+	float: left;	
+}
+#contactForm input{
+	border: 1px solid black;
+	width: 250px;
+	height: 30px;
+}
+#contactForm textarea{
+	border: 1px solid black;
+	margin-top; 5px;
+	width: 665px;
+	overflow: hidden;
+	height: 280px;
+	padding: 5px;
+}
+#contactForm a{
+	text-align: center;
+	display: inline-block;
+	float: right;
+	margin: 5px;
+	height: 35px;
+	width: 70px;	
+	text-decoration: none;
+	padding: 3px 10px;
+	background-color: green;
+}
+#contactForm a:hover{
+	border: 2px solid black;
+	color: black;
+}
+
+@keyframes zoom {
+	0% { transform: translateX(0)}
+	100% { transform: translateX(-451px); width: 880px; height: 490px}
+}
+@keyframes zoomOut {
+	0% { transform: translateX(-451px); width: 870px; height: 490px;}
+	100% { transform: translateX(0)}	
+}
+@keyframes opacity{
+	0% {opacity: 0}
+	50%{opacity: 0}
+	100% {opacity: 1}
+}
+@keyframes pulse{
+	0% {transform: scale(0.8);}
+	50% {transform: scale(1.3);}
+	100% {transform: scale(0.8);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
